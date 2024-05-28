@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /*Neutral*/
+    --black: #263238;
+    --d_grey: #4D4D4D;
+    --grey: #717171;
+    --l_grey: #89939E;
+    --grey_blue: #ABBED1;
+    --silver: #F5F7FA;
+    --white: #FFFFFF;
+
+
+    --p_green: #4caf4f;
+    --s_black: #263238;
+    --info: #2194F3;
+
+    /*Comor Shade*/
+
+    --shade1: #43A046;
+    --shade2: #388E3B;
+    --shade3: #237D31;
+    --shade4: #1B5E1F;
+    --shade5: #103E13;
+
+    /*Color Tint*/
+    --tint1: #66BB69;
+    --tint2: #81C784;
+    --tint3: #A5D6A7;
+    --tint4: #C8E6C9;
+    --tint5: #E8F5E9;
+
+    /*Action*/
+    --warning: #FBC02D;
+    --error: #E53835;
+    --success: #2E7D31;
+
+    /*Font*/
+    --inter: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--inter);
+    margin-top: 2rem;
+}
+
+.intro-page{
+    background-color: var(--silver);
+    margin-top: 2rem;
+}
+
+section{
+    padding: 2rem;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--d_grey);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+h1{
+    font-size: 32px;
+}
+
+span{
+    color: var(--p_green);
+}
+
+p{
+    font-size: 14px;
+    color: var(--grey);
+}
+
+button {
+    background-color: var(--p_green);
+    color: var(--white);
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    gap: 0.3rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button:hover{
+    background-color: var(--shade1);
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.btn-cust{
+    background-color: transparent;
+    color: var(--p_green);
+    width: 100%;
+}
+
+.btn-cust:hover{
+    background-color: transparent;
+}
+
+h5{
+    color: var(--p_green);
+}
+
+.manage-page{
+    gap: 4rem;
+}
