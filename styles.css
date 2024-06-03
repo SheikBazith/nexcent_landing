@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /*Neutral*/
+    --black: #263238;
+    --d_grey: #4D4D4D;
+    --grey: #717171;
+    --l_grey: #89939E;
+    --grey_blue: #ABBED1;
+    --silver: #F5F7FA;
+    --white: #FFFFFF;
+
+
+    --p_green: #4caf4f;
+    --s_black: #263238;
+    --info: #2194F3;
+
+    /*Comor Shade*/
+
+    --shade1: #43A046;
+    --shade2: #388E3B;
+    --shade3: #237D31;
+    --shade4: #1B5E1F;
+    --shade5: #103E13;
+
+    /*Color Tint*/
+    --tint1: #66BB69;
+    --tint2: #81C784;
+    --tint3: #A5D6A7;
+    --tint4: #C8E6C9;
+    --tint5: #E8F5E9;
+
+    /*Action*/
+    --warning: #FBC02D;
+    --error: #E53835;
+    --success: #2E7D31;
+
+    /*Font*/
+    --inter: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--inter);
+    margin-top: 2rem;
+}
+
+.intro-page{
+    background-color: var(--silver);
+    margin-top: 2rem;
+}
+
+header{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section{
+    padding: 2rem;
+
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--d_grey);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+h1{
+    font-size: clamp(1.5rem,4vw,4rem);
+    line-height: clamp(2rem,4vw+1rem,6rem);
+}
+
+span{
+    color: var(--p_green);
+}
+
+p{
+    color: var(--grey);
+    font-size: clamp(0.1rem,4vw+1rem,1.1rem);
+}
+
+button {
+    background-color: var(--p_green);
+    color: var(--white);
+    border: none;
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    gap: 0.3rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button:hover{
+    background-color: var(--shade1);
+}
+
+h2{
+    font-size: clamp(1.5rem,3vw,2rem);
+}
+
+h3{
+    font-size: clamp(1.5rem,3vw,2rem);
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.btn-cust{
+    background-color: transparent;
+    color: var(--p_green);
+   
+}
+
+.btn-cust:hover{
+    background-color: transparent;
+}
+
+h5{
+    color: var(--p_green);
+}
+
+
+.manage-box{
+    width: 300px;
+    min-height: 320px;
+    max-height: 420px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.para-box{
+    border-radius: 5px;
+    position: relative;
+    padding: 1rem;
+    bottom: 6rem;
+    background-color: var(--silver);
+    width: 90%;
+    height: 160px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.nav-bar{
+    cursor: pointer;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: var(--p_green);
+    color: white;
+}
