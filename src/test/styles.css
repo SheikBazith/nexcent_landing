@@ -54,8 +54,14 @@ body{
     margin-top: 2rem;
 }
 
+header{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 section{
     padding: 2rem;
+
 }
 
 h1,h2,h3,h4,h5{
@@ -64,7 +70,8 @@ h1,h2,h3,h4,h5{
     margin-bottom: 0.5rem;
 }
 h1{
-    font-size: 32px;
+    font-size: clamp(1.5rem,4vw,4rem);
+    line-height: clamp(2rem,4vw+1rem,6rem);
 }
 
 span{
@@ -72,15 +79,15 @@ span{
 }
 
 p{
-    font-size: 14px;
     color: var(--grey);
+    font-size: clamp(0.1rem,4vw+1rem,1.1rem);
 }
 
 button {
     background-color: var(--p_green);
     color: var(--white);
     border: none;
-    width: 100px;
+    width: 120px;
     height: 50px;
     font-size: 16px;
     font-weight: 500;
@@ -95,11 +102,11 @@ button:hover{
 }
 
 h2{
-    font-size: 24px;
+    font-size: clamp(1.5rem,3vw,2rem);
 }
 
 h3{
-    font-size: 22px;
+    font-size: clamp(1.5rem,3vw,2rem);
     margin-bottom: 1rem;
 }
 
@@ -110,7 +117,7 @@ h4{
 .btn-cust{
     background-color: transparent;
     color: var(--p_green);
-    width: 100%;
+   
 }
 
 .btn-cust:hover{
@@ -121,6 +128,37 @@ h5{
     color: var(--p_green);
 }
 
-.manage-page{
-    gap: 4rem;
+
+.manage-box{
+    width: 300px;
+    min-height: 320px;
+    max-height: 420px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.para-box{
+    border-radius: 5px;
+    position: relative;
+    padding: 1rem;
+    bottom: 6rem;
+    background-color: var(--silver);
+    width: 90%;
+    height: 160px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.nav-bar{
+    cursor: pointer;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: var(--p_green);
+    color: white;
 }
